@@ -1,0 +1,20 @@
+﻿@page "/counter"
+@using Aleksey
+
+<h1>Counterpart</h1>
+<PageTitleAK>hooh</PageTitleAK>
+<p role="status">Currency count: @currentCount</p>
+
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        //Func<int,int> fn = (i) => 1000 + i;
+        currentCount+=2;
+        //currentCount = fn(currentCount);
+    }
+}
